@@ -7,7 +7,6 @@ import time
 import cv2
 import requests
 import uuid
-import time
 import json
 import random
 
@@ -16,7 +15,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-v", "--video", help="path to the video file")
 ap.add_argument("-a", "--min-area", type=int, default=500, help="minimum area size")
 ap.add_argument("-l", "--location", default="Room " + str(random.random()), help="Camera location")
-#ap.add_argument("-s", "--slow-mode", type=bool, default=bool(False), help="Slow Mode, capture image every 30 secs")
+ap.add_argument("-s", "--slow-mode", type=bool, default=bool(False), help="Slow Mode, capture image every 30 secs")
 args = vars(ap.parse_args())
 
 
